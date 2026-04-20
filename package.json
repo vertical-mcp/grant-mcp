@@ -1,0 +1,58 @@
+{
+  "name": "@vertical-mcp/grant-mcp",
+  "version": "0.1.0",
+  "description": "MCP server for global research grant databases (NSF, ERC, KRF)",
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "grants",
+    "research",
+    "nsf",
+    "erc",
+    "krf",
+    "nrf"
+  ],
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "grant-mcp": "dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx watch src/index.ts",
+    "typecheck": "tsc --noEmit",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "undici": "^6.19.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.5.0"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT",
+  "author": "Yongbum Kim <kyb8801@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vertical-mcp/grant-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vertical-mcp/grant-mcp/issues"
+  },
+  "homepage": "https://github.com/vertical-mcp/grant-mcp#readme",
+  "publishConfig": {
+    "access": "public"
+  }
+}

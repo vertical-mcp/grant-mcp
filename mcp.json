@@ -1,0 +1,23 @@
+{
+  "name": "grant-mcp",
+  "displayName": "Grant MCP",
+  "description": "Search research grants across NSF (US), ERC (EU), and KRF/NRF (Korea). Excludes NIH.",
+  "version": "0.1.0",
+  "author": "Yongbum Kim",
+  "license": "MIT",
+  "homepage": "https://github.com/vertical-mcp/grant-mcp",
+  "repository": "https://github.com/vertical-mcp/grant-mcp",
+  "runtime": "node",
+  "entrypoint": "dist/index.js",
+  "install": {
+    "npm": "@vertical-mcp/grant-mcp"
+  },
+  "env": {
+    "KRF_API_KEY": {
+      "required": false,
+      "description": "Data.go.kr service key for KRF/NRF search. Free; register at https://www.data.go.kr. Without this key, Korean grant search returns empty results (other sources still work)."
+    }
+  },
+  "categories": ["research", "grants", "academic", "funding"],
+  "tags": ["nsf", "erc", "krf", "nrf", "grants", "research-funding"]
+}
